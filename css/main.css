@@ -1,0 +1,116 @@
+body {
+  background-color: #f3f3f3;
+  font-size: 22px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: Arial, Calibri, Times New Roman;
+  overflow-x: hidden;
+  color: #444;
+  letter-spacing: 0.01rem;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+input[type=submit] {
+  outline: none;
+  border: none;
+
+}
+
+input[type=text] {
+  font-size: 18px;
+  width: 180px;
+  height: 25px;
+  border: #666 1px solid;
+  outline: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+input:focus:required:invalid, textarea:focus:required:invalid {
+  border-color: red;
+}
+
+input:focus:valid, textarea:focus:valid {
+  border-color: green;
+}
+
+.container {
+  height: auto;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container h2 {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.main_nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.main_nav a {
+  display: block;
+  padding: 10px;
+  min-width: 150px;
+  letter-spacing: 0.1rem;
+  transition: all .25s ease;
+  opacity: .65;
+}
+
+.main_nav a:hover {
+  opacity: 1;
+}
+
+.container .out_btn {
+  border-radius: 10px;
+  padding: 10px;
+  display: inline-block;
+  background-color: #f17777;
+  min-width: 90px;
+  color: #fff;
+  transition: all .25s ease;
+  margin: 5px;
+  font-size: 18px;
+  height: 20px;
+  line-height: 20px;
+}
+
+.container input.out_btn {
+  height: 40px;
+}
+
+.container .out_btn:hover {
+  opacity: .8;
+  cursor: pointer;
+}
+
+table.table_res {
+  margin-bottom: 15px;
+  font-size: 18px;
+  text-align: center;
+}
+
+table.table_res thead {
+  font-style: italic;
+}
+
+table.table_res td {
+  padding: 10px;
+}
+
+#year_id, #month_id {
+  margin-bottom: 10px;
+}
