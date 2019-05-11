@@ -62,17 +62,55 @@ input:focus:valid, textarea:focus:valid {
 }
 
 .main_nav a {
-  display: block;
+  display: inline-block;
   padding: 10px;
   min-width: 150px;
   letter-spacing: 0.1rem;
-  transition: all .25s ease;
-  opacity: .65;
+  transition: all .25s ease-in-out;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 3px;
 }
 
-.main_nav a:hover {
-  opacity: 1;
+.main_nav a:hover span {
+  color: #f9f0ff;
 }
+
+.main_nav a span {
+  z-index: 3;
+  position: relative;
+  transition: all .35s ease-in-out;
+}
+
+.main_nav div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #125aa2b3;
+  transition: all .35s ease;
+  z-index: 2;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.main_nav a:hover div {
+  width: 100%;
+}
+
+.main_nav a div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40px;
+  background-color: #125aa2b3;
+  width: 40px;
+  height: 100%;
+  line-height: 55px;
+  color: #fff;
+}
+
 
 .container .out_btn {
   border-radius: 10px;
@@ -81,11 +119,12 @@ input:focus:valid, textarea:focus:valid {
   background-color: #f17777;
   min-width: 90px;
   color: #fff;
-  transition: all .25s ease;
+  transition: all .25s ease-in-out;
   margin: 5px;
   font-size: 18px;
   height: 20px;
   line-height: 20px;
+  box-shadow: 0 3px 0 0 #9a000087;
 }
 
 .container input.out_btn {
@@ -93,8 +132,14 @@ input:focus:valid, textarea:focus:valid {
 }
 
 .container .out_btn:hover {
-  opacity: .8;
-  cursor: pointer;
+   opacity: .8;
+   cursor: pointer;
+}
+
+.container .out_btn:active {
+  top: 3px;
+  position: relative;
+  box-shadow: none;
 }
 
 table.table_res {

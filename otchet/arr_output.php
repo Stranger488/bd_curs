@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>РћС‚С‡РµС‚</title>
+    <title>Отчет</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
     <div class="container">
         <?php if (isset($already_exist)) { ?>
-            <h4>РўР°РєРѕР№ РѕС‚С‡РµС‚ СѓР¶Рµ СЃСѓС‰РµСЃС‚РІСѓРµС‚.</h4>
+            <h4>Такой отчет уже существует.</h4>
         <?php } ?>
 
         <?php if (isset($otchet)) {?>
-            <h2>Р РµР·СѓР»СЊС‚Р°С‚С‹ РѕС‚С‡РµС‚Р°</h2>
+            <h2>Результаты отчета</h2>
             <table class="table_res" border="1" width="100%">
                 <thead>
                     <tr>
-                        <td>РќРѕРјРµСЂ СЃС‚СЂРѕРєРё</td>
-                        <td>РќРѕРјРµСЂ РѕС‚РґРµР»РµРЅРёСЏ</td>
-                        <td>Р“РѕРґ</td>
-                        <td>РњРµСЃСЏС†</td>
-                        <td>Р”РёР°РіРЅРѕР· РїР°С†РёРµРЅС‚Р°</td>
-                        <td>РљРѕР»РёС‡РµСЃС‚РІРѕ РїР°С†РёРµРЅС‚РѕРІ</td>
+                        <td>Номер строки</td>
+                        <td>Номер отделения</td>
+                        <td>Год</td>
+                        <td>Месяц</td>
+                        <td>Диагноз пациента</td>
+                        <td>Количество пациентов</td>
                     </tr>
                 </thead>
                 <tbody>
@@ -39,10 +39,10 @@
         <?php }?>
 
 
-        <a href="../menu/menu.php" class="out_btn">Р’ РјРµРЅСЋ</a>
-        <a href="?out" class="out_btn" name="out">Р’С‹С…РѕРґ</a>
+        <a href="../menu/menu.php" class="out_btn">В меню</a>
+        <a href="?out" class="out_btn" name="out">Выход</a>
     </div>
 
-    <script type="text/javascript" src="../js/script.js"></script>
+
 </body>
 </html>

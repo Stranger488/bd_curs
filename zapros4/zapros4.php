@@ -1,6 +1,6 @@
 <?php 
     if (isset($_GET['out'])) {
-            $output = "Р”Рѕ СЃРІРёРґР°РЅРёСЏ.";
+            $output = "До свидания.";
             include '../output.php';
             exit();
     }
@@ -22,7 +22,7 @@
     if ($row_num > 0) {
         $rows = $result->fetchAll();
     } else {
-        $output = "РўР°РєРёС… РїР°С†РёРµРЅС‚РѕРІ РЅРµ РЅР°Р№РґРµРЅРѕ.";
+        $output = "Таких пациентов не найдено.";
         $nav_buttons = true;
         include '../output.php';
         exit();

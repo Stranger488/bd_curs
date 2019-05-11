@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Р—Р°РїСЂРѕСЃ 4</title>
+    <title>Запрос 4</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
     <div class="container">
-        <h2>Р РµР·СѓР»СЊС‚Р°С‚С‹ Р·Р°РїСЂРѕСЃР° 4</h2>
+        <h2>Результаты запроса 4</h2>
 
         <table class="table_res" border="1" width="100%">
             <thead>
                 <tr>
-                    <td>РќРѕРјРµСЂ РїР°С†РёРµРЅС‚Р°</td>
-                    <td>РџР°СЃРїРѕСЂС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ</td>
-                    <td>РђРґСЂРµСЃ</td>
-                    <td>Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ</td>
-                    <td>РЎРїРµС†РёР°Р»СЊРЅРѕСЃС‚СЊ</td>
-                    <td>Р”Р°С‚Р° РїРѕСЃС‚СѓРїР»РµРЅРёСЏ</td>
-                    <td>Р”Р°С‚Р° РІС‹РїРёСЃРєРё</td>
-                    <td>Р”РёР°РіРЅРѕР·</td>
-                    <td>РќРѕРјРµСЂ РїР°Р»Р°С‚С‹</td>
-                    <td>РќРѕРјРµСЂ РІСЂР°С‡Р°</td>
+                    <td>Номер пациента</td>
+                    <td>Паспортные данные</td>
+                    <td>Адрес</td>
+                    <td>Дата рождения</td>
+                    <td>Дата поступления</td>
+                    <td>Дата выписки</td>
+                    <td>Диагноз</td>
+                    <td>Номер палаты</td>
+                    <td>Номер врача</td>
                 </tr>
             </thead>
             <tbody>
@@ -40,10 +39,9 @@
             </tbody>
         </table>
 
-        <a href="../menu/menu.php" class="out_btn">Р’ РјРµРЅСЋ</a>
-        <a href="?out" class="out_btn" name="out">Р’С‹С…РѕРґ</a>
+        <a href="../menu/menu.php" class="out_btn">В меню</a>
+        <a href="?out" class="out_btn" name="out">Выход</a>
     </div>
 
-    <script type="text/javascript" src="../js/script.js"></script>
 </body>
 </html>

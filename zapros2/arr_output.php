@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Р—Р°РїСЂРѕСЃ 2</title>
+    <title>Запрос 2</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
     <div class="container">
-        <h2>Р РµР·СѓР»СЊС‚Р°С‚С‹ Р·Р°РїСЂРѕСЃР° 2</h2>
+        <h2>Результаты запроса 2</h2>
 
         <table class="table_res" border="1" width="100%">
             <thead>
                 <tr>
-                    <td>РќРѕРјРµСЂ РѕС‚РґРµР»РµРЅРёСЏ</td>
-                    <td>РќР°Р·РІР°РЅРёРµ РѕС‚РґРµР»РµРЅРёСЏ</td>
-                    <td>Р¤. Р. Рћ. Р·Р°РІРµРґСѓСЋС‰РµРіРѕ</td>
-                    <td>РљРѕР»РёС‡РµСЃС‚РІРѕ РјРµСЃС‚ РІ РѕС‚РґРµР»РµРЅРёРё</td>
+                    <td>Номер отделения</td>
+                    <td>Название отделения</td>
+                    <td>Ф. И. О. заведующего</td>
+                    <td>Количество мест в отделении</td>
                 </tr>
             </thead>
             <tbody>
@@ -29,10 +29,10 @@
             </tbody>
         </table>
 
-        <a href="../menu/menu.php" class="out_btn">Р’ РјРµРЅСЋ</a>
-        <a href="?out" class="out_btn" name="out">Р’С‹С…РѕРґ</a>
+        <a href="../menu/menu.php" class="out_btn">В меню</a>
+        <a href="?out" class="out_btn" name="out">Выход</a>
     </div>
 
-    <script type="text/javascript" src="../js/script.js"></script>
+
 </body>
 </html>

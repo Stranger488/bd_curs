@@ -4,7 +4,7 @@
 
          $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO_ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
-        $output = 'ÐÐµÐ²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾ Ð¿Ð¾Ð´ÐºÐ»ÑŽÑ‡Ð¸Ñ‚ÑŒÑÑ Ðº Ð‘Ð°Ð·Ðµ Ð”Ð°Ð½Ð½Ñ‹Ñ…' . $e->getMessage();
+        $output = 'Íåâîçìîæíî ïîäêëþ÷èòüñÿ ê Áàçå Äàííûõ' . $e->getMessage();
         include 'output.php';
         exit();
     }

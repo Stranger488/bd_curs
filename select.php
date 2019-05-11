@@ -4,7 +4,7 @@
         $result = $pdo->query($SQL);
 
     } catch (PDOException $e) {
-        $output = 'ÐžÑˆÐ¸Ð±ÐºÐ° Ð¿Ñ€Ð¸ Ð²Ñ‹Ð¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ð¸ Ð·Ð°Ð¿Ñ€Ð¾ÑÐ° ' . $e->getMessage();
+        $output = 'Îøèáêà ïðè âûïîëíåíèè çàïðîñà ' . $e->getMessage();
         include 'output.php';
         exit();
     }

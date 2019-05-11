@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Р—Р°РїСЂРѕСЃ 1</title>
+    <title>Запрос 1</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
     <div class="container">
-        <h2>Р РµР·СѓР»СЊС‚Р°С‚С‹ Р·Р°РїСЂРѕСЃР° 1</h2>
+        <h2>Результаты запроса 1</h2>
 
         <table class="table_res" border="1" width="100%">
             <thead>
                 <tr>
-                    <td>ID РІСЂР°С‡Р°</td>
-                    <td>Р¤Р°РјРёР»РёСЏ РІСЂР°С‡Р°</td>
-                    <td>РљРѕР»РёС‡РµСЃС‚РІРѕ РїР°С†РёРµРЅС‚РѕРІ</td>
+                    <td>ID врача</td>
+                    <td>Фамилия врача</td>
+                    <td>Количество пациентов</td>
                 </tr>
             </thead>
             <tbody>
@@ -27,10 +27,10 @@
             </tbody>
         </table>
 
-        <a href="../menu/menu.php" class="out_btn">Р’ РјРµРЅСЋ</a>
-        <a href="?out" class="out_btn" name="out">Р’С‹С…РѕРґ</a>
+        <a href="../menu/menu.php" class="out_btn">В меню</a>
+        <a href="?out" class="out_btn" name="out">Выход</a>
     </div>
 
-    <script type="text/javascript" src="../js/script.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 <?php 
     if (isset($_GET['out'])) {
-            $output = "Р”Рѕ СЃРІРёРґР°РЅРёСЏ.";
+            $output = "До свидания.";
             include '../output.php';
             exit();
     }
@@ -27,19 +27,19 @@
     } else {
 //        $pdo->setAttribute(PDO::MYSQL_ATTR_USE_BUFFERED_QUERY, true);
 //        $q = $pdo->exec("CALL hospital.OTCH($in_year, $in_month)");
-//        echo 'РћС‚С‡РµС‚ СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.';
+//        echo 'Отчет успешно создан.';
 
         $STH = $pdo->prepare("CALL hospital.OTCH($in_year, $in_month)");
         $STH->execute();
         $STH->closeCursor();
-//        echo 'РћС‚С‡РµС‚ СѓСЃРїРµС€РЅРѕ СЃРѕР·РґР°РЅ.';
+//        echo 'Отчет успешно создан.';
 
         include '../select.php';
         $row_num = $result->rowCount();
         if ($row_num > 0) {
             $otchet = $result->fetchAll();
         } else {
-            $output = "Р’ РѕС‚С‡РµС‚Рµ c С‚РµРєСѓС‰РёРјРё РїР°СЂР°РјРµС‚СЂР°РјРё РЅРµС‚ СЃС‚СЂРѕРє.";
+            $output = "В отчете c текущими параметрами нет строк.";
             $nav_buttons = true;
             include '../output.php';
             exit();

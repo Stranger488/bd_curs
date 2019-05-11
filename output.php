@@ -16,11 +16,11 @@
         <br>
 
         <?php if (isset($nav_buttons)) { ?>
-            <a href="../menu/menu.php" class="out_btn">Р’ РјРµРЅСЋ</a>
-            <a href="?out" class="out_btn" name="out">Р’С‹С…РѕРґ</a>
+            <a href="../menu/menu.php" class="out_btn">В меню</a>
+            <a href="?out" class="out_btn" name="out">Выход</a>
         <?php } ?>
     </div>
 
-    <script type="text/javascript" src="../js/script.js"></script>
+
 </body>
 </html>
