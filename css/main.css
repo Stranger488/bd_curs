@@ -88,7 +88,7 @@ input:focus:valid, textarea:focus:valid {
   left: 0;
   height: 100%;
   width: 0;
-  background-color: #125aa2b3;
+  background-color: rgba(18, 90, 162, 0.7);
   transition: all .35s ease;
   z-index: 2;
   border-bottom-right-radius: 5px;
@@ -99,18 +99,63 @@ input:focus:valid, textarea:focus:valid {
   width: 100%;
 }
 
-.main_nav a div::before {
+.main_nav a div:before {
   content: '';
   position: absolute;
   top: 0;
   left: -40px;
-  background-color: #125aa2b3;
+  background-color: rgba(18, 90, 162, 0.7);
   width: 40px;
   height: 100%;
   line-height: 55px;
   color: #fff;
 }
 
+.main_nav a div:after {
+    content: '>';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    background-color: transparent;
+    width: 40px;
+    height: 100%;
+    line-height: 55px;
+    color: #fff;
+    transition: transform .25s ease-in-out;
+}
+
+.main_nav a:hover div:after {
+    transform: translateX(15px);
+}
+
+/*.main_nav a .bef {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: -40px;*/
+/*  background-color: rgba(18, 90, 162, 0.7);*/
+/*  width: 40px;*/
+/*  height: 100%;*/
+/*  line-height: 55px;*/
+/*  color: #fff;*/
+/*}*/
+
+/*.main_nav a .aft {*/
+/*  content: '';*/
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: -40px;*/
+/*  background-color: transparent;*/
+/*  width: 40px;*/
+/*  height: 100%;*/
+/*  line-height: 55px;*/
+/*  color: #fff;*/
+/*  transition: transform .25s ease-in-out;*/
+/*}*/
+
+/*.main_nav a:hover .main_nav a .aft {*/
+/*  transform: translateX(15px);*/
+/*}*/
 
 .container .out_btn {
   border-radius: 10px;
@@ -119,7 +164,7 @@ input:focus:valid, textarea:focus:valid {
   background-color: #f17777;
   min-width: 90px;
   color: #fff;
-  transition: all .25s ease-in-out;
+  transition: opacity .25s ease-in-out;
   margin: 5px;
   font-size: 18px;
   height: 20px;
@@ -156,6 +201,7 @@ table.table_res td {
   padding: 10px;
 }
 
-#year_id, #month_id {
+#year_id, #month_id, #dep_id, #zapros1_year_id,
+#zapros6_year_id, #zapros6_month_id{
   margin-bottom: 10px;
 }

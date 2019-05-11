@@ -9,7 +9,7 @@
         <h2>Отправка запроса 1</h2>
 
         <p>
-            Отчет о лечащих врачах отделения XXX за 2017 год.
+            Отчет о количестве пациентов лечащих врачах требуемого отделения за требуемый год.
         </p>
 
         <hr>
@@ -17,6 +17,10 @@
         <form action="zapros1.php" method="GET">
             <label for="dep_id">Введите номер отделения:</label>
             <input type="text" name="dep_num" id="dep_id">
+            <br>
+            <label for="dep_id">Введите год:</label>
+            <input type="text" name="zapros1_year" id="zapros1_year_id">
+            <br>
             <input type="submit" name="send" value="Отправить" class="out_btn">
         </form>
 

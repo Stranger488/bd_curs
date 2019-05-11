@@ -9,12 +9,18 @@
         <h2>Отправка запроса 6</h2>
 
         <p>
-            Показать фамилии врачей, которые не назначались лечащими врачами пациентов в марте 2017 года.
+            Показать фамилии врачей, которые не назначались лечащими врачами пациентов в требуемом месяце и требуемом году.
         </p>
 
         <hr>
 
         <form action="zapros6.php" method="GET">
+            <label for="zapros6_year_id">Введите год:</label>
+            <input type="text" name="zapros6_year" id="zapros6_year_id">
+            <br>
+            <label for="zapros1_month_id">Введите месяц:</label>
+            <input type="text" name="zapros1_month" id="zapros1_month_id">
+            <br>
             <input type="submit" name="send" value="Отправить" class="out_btn">
         </form>
 

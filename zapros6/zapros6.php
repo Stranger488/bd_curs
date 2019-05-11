@@ -16,7 +16,9 @@
     $password = '';
     include '../db_connect.php';
 
-    $SQL = "SELECT Doc_family FROM hospital.doctor LEFT JOIN (SELECT * FROM hospital.patient WHERE YEAR(P_incoming_date)=2017 AND MONTH(P_incoming_date)=03) p2017_03
+    $zapros6_year = $_GET['zapros6_year'];
+    $zapros6_month = $_GET['zapros6_month'];
+    $SQL = "SELECT Doc_family FROM hospital.doctor LEFT JOIN (SELECT * FROM hospital.patient WHERE YEAR(P_incoming_date)='$zapros6_year' AND MONTH(P_incoming_date)='$zapros6_month') p2017_03
 	ON (doctor.Doc_id=p2017_03.PDoc_id) WHERE P_id IS NULL;";
     include '../select.php';
     $row_num = $result->rowCount();
