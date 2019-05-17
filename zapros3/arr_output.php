@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Запрос 3</title>
+    <meta charset="windows-1251">
+	<title>Запрос 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>

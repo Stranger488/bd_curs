@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Запрос 1</title>
+    <meta charset="windows-1251">
+	<title>Запрос 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
@@ -9,16 +11,16 @@
         <h2>Отправка запроса 1</h2>
 
         <p>
-            Отчет о количестве пациентов лечащих врачах требуемого отделения за требуемый год.
+            Отчет о количестве пациентов лечащих врачей требуемого отделения за требуемый год.
         </p>
 
         <hr>
 
         <form action="zapros1.php" method="GET">
-            <label for="dep_id">Введите номер отделения:</label>
+            <label for="dep_id">Введите название отделения:</label>
             <input type="text" name="dep_num" id="dep_id">
             <br>
-            <label for="dep_id">Введите год:</label>
+            <label for="zapros1_year_id">Введите год:</label>
             <input type="text" name="zapros1_year" id="zapros1_year_id">
             <br>
             <input type="submit" name="send" value="Отправить" class="out_btn">

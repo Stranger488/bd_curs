@@ -1,7 +1,7 @@
 <?php 
     if (isset($_GET['out'])) {
             $output = "До свидания.";
-            include '../output.php';
+            include '../include/output.php';
             exit();
     }
 
@@ -14,17 +14,17 @@
     $database = 'hospital';
     $login = 'root';
     $password = '';
-    include '../db_connect.php';
+    include '../include/db_connect.php';
 
     $SQL = "SELECT Dep_id, Dep_name, Dep_master_family, SUM(R_place_count) as place_count FROM hospital.department JOIN hospital.room ON (department.Dep_id=room.RDep_id) GROUP BY Dep_id;";
-    include '../select.php';
+    include '../include/select.php';
     $row_num = $result->rowCount();
     if ($row_num > 0) {
         $rows = $result->fetchAll();
     } else {
         $output = "Отделений в госпитале не найдено.";
         $nav_buttons = true;
-        include '../output.php';
+        include '../include/output.php';
         exit();
     }
 

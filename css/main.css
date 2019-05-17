@@ -11,7 +11,6 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  overflow-x: auto;
 }
 
 input[type=submit] {
@@ -125,17 +124,45 @@ input:focus:valid, textarea:focus:valid {
   transition: all .25s ease-in-out;
   font-size: 1em;
   z-index: 4;
-
 }
 
-.main_nav a #defis:before {
-  content: '\a4';
+/*.main_nav a #defis:before {*/
+/*  content: '\a4';*/
+/*  left: 0;*/
+/*}*/
+
+.main_nav li:nth-child(1) a #defis:before {
+   content: '1.';
+   left: 0;
+}
+.main_nav li:nth-child(2) a #defis:before {
+  content: '2.';
+  left: 0;
+}
+.main_nav li:nth-child(3) a #defis:before {
+  content: '3.';
+  left: 0;
+}
+.main_nav li:nth-child(4) a #defis:before {
+  content: '4.';
+  left: 0;
+}
+.main_nav li:nth-child(5) a #defis:before {
+  content: '5.';
+  left: 0;
+}
+.main_nav li:nth-child(6) a #defis:before {
+  content: '6.';
+  left: 0;
+}
+.main_nav li:nth-child(7) a #defis:before {
+  content: '7.';
   left: 0;
 }
 
 .main_nav a #defis:after {
     content: '>';
-  transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
     left: -45px;
 }
 
@@ -179,6 +206,7 @@ input:focus:valid, textarea:focus:valid {
 
 .table_wrap {
   overflow: auto;
+  width: auto;
 }
 
 table.table_res {

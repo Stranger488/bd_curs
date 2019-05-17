@@ -1,7 +1,7 @@
 <?php
     if (isset($_GET['out'])) {
         $output = "До свидания.";
-        include '../output.php';
+        include '../include/output.php';
         exit();
     }
 

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Запрос 4</title>
+    <meta charset="windows-1251">
+	<title>Запрос 4</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>
 <body>
@@ -10,7 +11,7 @@
         <h2>Результаты запроса 4</h2>
 
         <div class="table_wrap">
-            <table class="table_res" border="1">
+            <table class="table_res" border="1" width="100%">
                 <thead>
                 <tr>
                     <td>Номер пациента</td>
