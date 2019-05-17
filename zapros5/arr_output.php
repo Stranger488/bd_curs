@@ -7,8 +7,8 @@
 <body>
     <div class="container">
         <h2>Результаты запроса 5</h2>
-
-        <table class="table_res" border="1" width="100%">
+        <div class="table_wrap">
+            <table class="table_res" border="1" width="100%">
             <thead>
                 <tr>
                     <td>Номер врача</td>
@@ -38,6 +38,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
+        </div>
 
         <a href="../menu/menu.php" class="out_btn">В меню</a>
         <a href="?out" class="out_btn" name="out">Выход</a>

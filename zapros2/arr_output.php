@@ -8,7 +8,9 @@
     <div class="container">
         <h2>Результаты запроса 2</h2>
 
-        <table class="table_res" border="1" width="100%">
+        <div class="table_wrap">
+            <table class="table_res" border="1" width="100%">
+
             <thead>
                 <tr>
                     <td>Номер отделения</td>
@@ -16,8 +18,8 @@
                     <td>Ф. И. О. заведующего</td>
                     <td>Количество мест в отделении</td>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <?php foreach ($rows as $row): ?>
                     <tr>
                         <td><?php echo $row['Dep_id']; ?></td>
@@ -26,8 +28,9 @@
                         <td><?php echo $row['place_count']; ?></td>
                     </tr>
                 <?php endforeach; ?>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 
         <a href="../menu/menu.php" class="out_btn">В меню</a>
         <a href="?out" class="out_btn" name="out">Выход</a>

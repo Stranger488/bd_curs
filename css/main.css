@@ -1,16 +1,17 @@
 body {
   background-color: #f3f3f3;
-  font-size: 22px;
+  font-size: 1.5em;
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: Arial, Calibri, Times New Roman;
+  font-family: 'Open Sans', 'Arial', 'Calibri', 'Times New Roman';
   overflow-x: hidden;
   color: #444;
   letter-spacing: 0.01rem;
   margin: 0;
   padding: 0;
   text-align: center;
+  overflow-x: auto;
 }
 
 input[type=submit] {
@@ -41,7 +42,7 @@ input:focus:valid, textarea:focus:valid {
   height: auto;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 25px;
 }
 
 .container a {
@@ -59,6 +60,7 @@ input:focus:valid, textarea:focus:valid {
   padding: 0;
   list-style-type: none;
   margin-bottom: 15px;
+  text-align: left;
 }
 
 .main_nav a {
@@ -93,69 +95,57 @@ input:focus:valid, textarea:focus:valid {
   z-index: 2;
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
+  line-height: 56px;
+}
+
+#defis {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  background-color: rgba(18, 90, 162, 0.7);
+  width: 35px;
+  height: 100%;
+  line-height: 59px;
+  transition: all .25s ease-in-out;
+  z-index: 3;
 }
 
 .main_nav a:hover div {
   width: 100%;
 }
 
-.main_nav a div:before {
-  content: '';
+.main_nav a #defis:before, .main_nav a #defis:after {
   position: absolute;
   top: 0;
-  left: -40px;
-  background-color: rgba(18, 90, 162, 0.7);
-  width: 40px;
-  height: 100%;
-  line-height: 55px;
-  color: #fff;
+  background-color: transparent;
+  width: 35px;
+  line-height: 59px;
+  color: #f3f3f3;
+  text-align: center;
+  transition: all .25s ease-in-out;
+  font-size: 1em;
+  z-index: 4;
+
 }
 
-.main_nav a div:after {
+.main_nav a #defis:before {
+  content: '\a4';
+  left: 0;
+}
+
+.main_nav a #defis:after {
     content: '>';
-    position: absolute;
-    top: 0;
-    left: -40px;
-    background-color: transparent;
-    width: 40px;
-    height: 100%;
-    line-height: 55px;
-    color: #fff;
-    transition: transform .25s ease-in-out;
+  transform: rotateZ(90deg);
+    left: -45px;
 }
 
-.main_nav a:hover div:after {
-    transform: translateX(15px);
+.main_nav a:hover #defis:before {
+  transform: translateX(-45px);
 }
 
-/*.main_nav a .bef {*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: -40px;*/
-/*  background-color: rgba(18, 90, 162, 0.7);*/
-/*  width: 40px;*/
-/*  height: 100%;*/
-/*  line-height: 55px;*/
-/*  color: #fff;*/
-/*}*/
-
-/*.main_nav a .aft {*/
-/*  content: '';*/
-/*  position: absolute;*/
-/*  top: 0;*/
-/*  left: -40px;*/
-/*  background-color: transparent;*/
-/*  width: 40px;*/
-/*  height: 100%;*/
-/*  line-height: 55px;*/
-/*  color: #fff;*/
-/*  transition: transform .25s ease-in-out;*/
-/*}*/
-
-/*.main_nav a:hover .main_nav a .aft {*/
-/*  transform: translateX(15px);*/
-/*}*/
+.main_nav a:hover #defis:after {
+    transform: translateX(55px);
+}
 
 .container .out_btn {
   border-radius: 10px;
@@ -187,6 +177,10 @@ input:focus:valid, textarea:focus:valid {
   box-shadow: none;
 }
 
+.table_wrap {
+  overflow: auto;
+}
+
 table.table_res {
   margin-bottom: 15px;
   font-size: 18px;
@@ -199,6 +193,16 @@ table.table_res thead {
 
 table.table_res td {
   padding: 10px;
+}
+
+.table_res thead {
+  background-color: rgba(18, 90, 162, 0.75);
+  color: #f3f3f3;
+}
+
+.table_res tbody {
+  background-color: rgba(18, 90, 162, 0.5);
+  color: #f3f3f3;
 }
 
 #year_id, #month_id, #dep_id, #zapros1_year_id,

@@ -12,7 +12,8 @@
 
         <?php if (isset($otchet)) {?>
             <h2>Результаты отчета</h2>
-            <table class="table_res" border="1" width="100%">
+            <div class="table_wrap">
+                <table class="table_res" border="1" width="100%">
                 <thead>
                     <tr>
                         <td>Номер строки</td>
@@ -36,6 +37,7 @@
                     <?php endforeach; ?>
                 </tbody>
             </table>
+            </div>
         <?php }?>
 
 

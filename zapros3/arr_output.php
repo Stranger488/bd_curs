@@ -8,8 +8,9 @@
     <div class="container">
         <h2>Результаты запроса 3</h2>
 
-        <table class="table_res" border="1" width="100%">
-            <thead>
+        <div class="table_wrap">
+            <table class="table_res" border="1" width="100%">
+                <thead>
                 <tr>
                     <td>Номер врача</td>
                     <td>Ф. И. О. врача</td>
@@ -21,8 +22,8 @@
                     <td>Дата увольнения</td>
                     <td>Номер отделения</td>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <?php foreach ($rows as $row): ?>
                     <tr>
                         <td><?php echo $row['Doc_id']; ?></td>
@@ -36,8 +37,9 @@
                         <td><?php echo $row['DocDep_id']; ?></td>
                     </tr>
                 <?php endforeach; ?>
-            </tbody>
-        </table>
+                </tbody>
+            </table>
+        </div>
 
         <a href="../menu/menu.php" class="out_btn">В меню</a>
         <a href="?out" class="out_btn" name="out">Выход</a>
