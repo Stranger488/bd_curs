@@ -1,6 +1,6 @@
 <?php
     if (isset($_GET['out'])) {
-        $output = "До свидания.";
+        $output = "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.";
         include '../include/output.php';
         exit();
     }
@@ -32,7 +32,7 @@
             exit();
         }
         if ($point == 7) {
-            header('location: ../otchet/otchet_all.php');
+            header('location: ../otchet/otchet.php');
             exit();
         }
     }
