@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="windows-1251">
-	<title>Курсовой</title>
+	<title>Курсовая</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="../css/main.css">
 </head>

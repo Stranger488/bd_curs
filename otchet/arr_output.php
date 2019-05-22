@@ -14,7 +14,7 @@
         <?php } ?>
 
         <?php if (isset($otchet)) {?>
-            <h2>Результаты отчета</h2>
+            <h2>Результаты запроса</h2>
             <div class="table_wrap">
                 <table class="table_res" border="1" width="100%">
                 <thead>
