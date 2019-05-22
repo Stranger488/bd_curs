@@ -32,7 +32,7 @@
             exit();
         }
         if ($point == 7) {
-            header('location: ../otchet/otchet.php');
+            header('location: ../otchet/otchet_all.php');
             exit();
         }
     }
