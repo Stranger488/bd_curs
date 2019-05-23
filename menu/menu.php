@@ -1,6 +1,6 @@
 <?php
     if (isset($_GET['out'])) {
-        $output = "пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ.";
+        $output = "До свидания.";
         include '../include/output.php';
         exit();
     }
