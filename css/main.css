@@ -8,7 +8,7 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: 'Open Sans', 'Arial', 'Calibri', 'Times New Roman';
+  font-family: 'Open Sans', 'Arial', 'Calibri', 'Times New Roman', serif;
   overflow-x: hidden;
   color: #333;
   letter-spacing: 0.01rem;
@@ -88,10 +88,9 @@ input:focus:valid, textarea:focus:valid {
 }
 
 .main_nav {
-  margin: 0;
+  margin: 0 0 15px 0;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 15px;
   text-align: left;
 }
 
@@ -130,7 +129,7 @@ input:focus:valid, textarea:focus:valid {
   line-height: 56px;
 }
 
-#defis {
+.main_nav a span.defis {
   position: absolute;
   top: 0;
   left: -35px;
@@ -146,7 +145,7 @@ input:focus:valid, textarea:focus:valid {
   width: 100%;
 }
 
-.main_nav a #defis:before, .main_nav a #defis:after {
+.main_nav a .defis:before, .main_nav a .defis:after {
   position: absolute;
   top: 0;
   background-color: transparent;
@@ -159,46 +158,46 @@ input:focus:valid, textarea:focus:valid {
   z-index: 4;
 }
 
-.main_nav li:nth-child(1) a #defis:before {
+.main_nav li:nth-child(1) a .defis:before {
    content: '1.';
    left: 0;
 }
-.main_nav li:nth-child(2) a #defis:before {
+.main_nav li:nth-child(2) a .defis:before {
   content: '2.';
   left: 0;
 }
-.main_nav li:nth-child(3) a #defis:before {
+.main_nav li:nth-child(3) a .defis:before {
   content: '3.';
   left: 0;
 }
-.main_nav li:nth-child(4) a #defis:before {
+.main_nav li:nth-child(4) a .defis:before {
   content: '4.';
   left: 0;
 }
-.main_nav li:nth-child(5) a #defis:before {
+.main_nav li:nth-child(5) a .defis:before {
   content: '5.';
   left: 0;
 }
-.main_nav li:nth-child(6) a #defis:before {
+.main_nav li:nth-child(6) a .defis:before {
   content: '6.';
   left: 0;
 }
-.main_nav li:nth-child(7) a #defis:before {
+.main_nav li:nth-child(7) a .defis:before {
   content: '7.';
   left: 0;
 }
 
-.main_nav a #defis:after {
+.main_nav a .defis:after {
     content: '>';
     transform: rotateZ(90deg);
     left: -45px;
 }
 
-.main_nav a:hover #defis:before {
+.main_nav a:hover .defis:before {
   transform: translateX(-45px);
 }
 
-.main_nav a:hover #defis:after {
+.main_nav a:hover .defis:after {
     transform: translateX(55px);
 }
 
